@@ -10,12 +10,14 @@ Formatting of datasets is done using the following steps:
 1. Capture proper frames from the videos.
 2. Extract appropriate features from the frames.
 3. Label each frame according to the human activity being performed.
-4. Keep the features and labels in a single xlsx file.
-5. Run 'fileCreate.m' as fileCreate(xlsx file name, training percentage) [for KTH: fileCreate('KTH', 70)]
+4. Keep the features and labels in a single .xlsx file.
+5. Run 'fileCreate.m' as *fileCreate(xlsx file name, training percentage)* [for KTH: *fileCreate('KTH', 70)*]
 
 * Sensor datastes
-1. Keep the features and labels in a single xlsx file.
-2. Run 'fileCreate.m' as fileCreate(xlsx file name, training percentage) [for KTH: fileCreate('KTH', 70)]
+1. Keep the features and labels in a single .xlsx file.
+2. Run 'fileCreate.m'.
+
+fileCreate creates the necessary train-test divisioned .mat file.
 
 ## Parameters
 
@@ -35,7 +37,7 @@ To Run the code, you need to specify the following parameters for the main funct
 * Set all the required parameters
 * run file main.m
 
-Example: main('KTH', 30, 20, 10, 'knn', 5)
+Example: *main('KTH', 30, 20, 10, 'knn', 5)*
 
 Link for algorithm details: [Paper](https://link.springer.com/article/10.1007/s00521-020-05297-5)
 
