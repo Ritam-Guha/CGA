@@ -10,9 +10,12 @@ Formatting of datasets is done using the following steps:
 1. Capture proper frames from the videos.
 2. Extract appropriate features from the frames.
 3. Label each frame according to the human activity being performed.
-4. Keep the features and labels in a single csv file.
-5. 
-    
+4. Keep the features and labels in a single xlsx file.
+5. Run 'fileCreate.m' as fileCreate(xlsx file name, training percentage) [for KTH: fileCreate('KTH', 70)]
+
+* Sensor datastes
+1. Keep the features and labels in a single xlsx file.
+2. Run 'fileCreate.m' as fileCreate(xlsx file name, training percentage) [for KTH: fileCreate('KTH', 70)]
 
 ## Parameters
 
