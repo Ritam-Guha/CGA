@@ -30,12 +30,26 @@ Recognition of human actions from visual contents is a budding field of computer
 
 ## Dataset samples
 
-<div style="text-align:center"><span style="color:red; font-family:Georgia; font-size:2em;">HMDB samples</span></div><br>
+<b>HMDB samples</span></b><br>
 <p align="center">  
   <img src="https://github.com/Ritam-Guha/CGA/blob/master/Images/HMDB%20samples.png"><br>
 </p>
   
 
-  *KTH samples*
-  ![KTH samples](https://github.com/Ritam-Guha/CGA/blob/master/Images/KTH%20samples.png)
-</center>
+<b>KTH samples</span></b><br>
+<p align="center">  
+  <img src="https://github.com/Ritam-Guha/CGA/blob/master/Images/KTH%20samples.png"><br>
+</p>
+
+
+<b>UCF samples</span></b><br>
+<p align="center">  
+  <img src="https://github.com/Ritam-Guha/CGA/blob/master/Images/UCF%20samples.png"><br>
+</p>
+
+
+<b>Weizmann samples</span></b><br>
+<p align="center">  
+  <img src="https://github.com/Ritam-Guha/CGA/blob/master/Images/Weizmann%20samples.png"><br>
+</p>
+
