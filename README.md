@@ -30,20 +30,7 @@ Recognition of human actions from visual contents is a budding field of computer
 
 ## Dataset samples
 
-figure {
-    display: inline-block;
-    border: 1px dotted gray;
-    margin: 20px; /* adjust as needed */
-}
-figure img {
-    vertical-align: top;
-}
-figure figcaption {
-    border: 1px dotted blue;
-    text-align: center;
-}
-
-<figure>
+<figure align="center">
   <img src="https://github.com/Ritam-Guha/CGA/blob/master/Images/HMDB%20samples.png">
   <figcaption align="center">HMDB samples</figcaption>
 </figure>
