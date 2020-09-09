@@ -32,7 +32,7 @@ Recognition of human actions from visual contents is a budding field of computer
 
 <b>Cooperative Genetic Algorithm</span></b><br>
 <p align="center">  
-  <img src="https://github.com/Ritam-Guha/CGA/blob/master/Images/HMDB%20samples.png">
+  <img src="https://github.com/Ritam-Guha/CGA/blob/master/Images/CGA.png">
 </p><br>
 
 ## Dataset samples
