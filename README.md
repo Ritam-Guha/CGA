@@ -2,6 +2,15 @@
 
 ### Paper Reference - Guha, R., Khan, A.H., Singh, P.K. et al. CGA: a new feature selection model for visual human action recognition. Neural Comput & Applic (2020). https://link.springer.com/article/10.1007/s00521-020-05297-5.
 
+## Dataset Links
+
+* Weizmann: Blank M, Gorelick L, Shechtman E, et al (2005) Actions as space-time shapes. In: Tenth IEEE International Conference on Computer Vision (ICCV’05) Volume 1. IEEE, pp 1395–1402
+* KTH: Schuldt C, Laptev I, Caputo B (2004) Recognizing human actions: a local SVM approach. In: Proceedings of the 17th International Conference on Pattern Recognition, 2004. ICPR 2004. IEEE, pp 32–36
+* UCF: Liu J, Luo J, Shah M (2009) Recognizing realistic actions from videos in the wild. In: IEEE conference on computer vision and pattern recognition. Citeseer, pp 1996–2003
+* HMDB: Kuehne H, Jhuang H, Garrote E, et al (2011) HMDB: a large video database for human motion recognition. In: 2011 International conference on computer vision. IEEE, pp 2556–2563
+* UCI HAR: Anguita D, Ghio A, Oneto L et al (2013) A public domain dataset for human activity recognition using smartphones. In: Esann
+* UCI HAR in Ambient Assisted Living: Anguita D, Ghio A, Oneto L, et al (2012) Human activity recognition on smartphones using a multiclass hardware-friendly support vector machine. In: International workshop on ambient assisted living. Springer, pp 216–223
+
 ## Preparation of datasets
 
 Format the datasets using the following steps:
