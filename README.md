@@ -11,12 +11,12 @@ Format the datasets using the following steps:
 2. Extract appropriate features from the frames.
 3. Label each frame according to the human activity being performed.
 4. Keep the features and labels in a single .xlsx file.
-5. Run 'fileCreate.m' as *fileCreate(xlsx file name, training percentage)* [for KTH: *fileCreate('KTH', 70)*]
+5. Run 'fileCreate.m' present in the Data directory as *fileCreate(xlsx file name, training percentage)* [for KTH: *fileCreate('KTH', 70)*]
 
 
 * Sensor datastes
 1. Keep the features and labels in a single .xlsx file.
-2. Run 'fileCreate.m'.
+2. Run 'fileCreate.m' present in the Data directory.
 
 fileCreate creates the necessary train-test divisioned .mat file.
 
