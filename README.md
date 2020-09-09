@@ -28,6 +28,13 @@ Link for algorithm details: [Paper](https://link.springer.com/article/10.1007/s0
 
 Recognition of human actions from visual contents is a budding field of computer vision and image understanding. The problem with such a recognition system is the huge dimensions of the feature vectors. Many of these features are irrelevant to the classification mechanism. For this reason, in this paper, we propose a novel feature selection (FS) model called cooperative genetic algorithm (CGA) to select some of the most important and discriminating features from the entire feature set to improve the classification accuracy as well as the time requirement of the activity recognition mechanism. In CGA, we have made an effort to embed the concepts of cooperative game theory in GA to create a both-way reinforcement mechanism to improve the solution of the FS model. The proposed FS model is tested on four benchmark video datasets named Weizmann, KTH, UCF11, HMDB51, and two sensor-based UCI HAR datasets. The experiments are conducted using four state-of-the-art feature descriptors, namely HOG, GLCM, SURF, and GIST. It is found that there is a significant improvement in the overall classification accuracy while considering very small fraction of the original feature vector.
 
+## CGA flowchart
+
+<b>Cooperative Genetic Algorithm</span></b><br>
+<p align="center">  
+  <img src="https://github.com/Ritam-Guha/CGA/blob/master/Images/HMDB%20samples.png">
+</p><br>
+
 ## Dataset samples
 
 <b>HMDB samples</span></b><br>
