@@ -23,10 +23,4 @@ function [population,accuracy]=populationRank(population,classifierType,paramVal
                 end                   
             end
         end
-    fprintf('\nPopulation now - \n');
-    for loop4=1:row
-        fprintf('accuracy - %f\tCount- %d\n',accuracy(1,loop4),sum(population(loop4,1:col)==1));
-    end
-    fprintf('\n');
-    
 end

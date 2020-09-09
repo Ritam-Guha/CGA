@@ -41,7 +41,7 @@ function [population,fitness]=crossover(population,firstParentId,secondParentId,
     % replacement in the original population
     for loop = 1:rows
         if(chromosomecomparator(population(loop,1:cols),fitness(loop),child(1,1:cols),fitnessFirstChild)<0)
-            fprintf('Replaced chromosome at %d in crossover with first\n',loop);
+            fprintf('Replaced chromosome at %d in crossover with first child\n',loop);
             population(loop,1:cols)=child(1,1:cols);
             fitness(loop)=fitnessFirstChild;          
             break;
@@ -50,7 +50,7 @@ function [population,fitness]=crossover(population,firstParentId,secondParentId,
 
     for loop = 1:rows
         if(chromosomecomparator(population(loop,1:cols),fitness(loop),child(2,1:cols),fitnessSecondChild)<0)
-            fprintf('Replaced chromosome at %d in crossover with second\n',loop);
+            fprintf('Replaced chromosome at %d in crossover with second child\n',loop);
             population(loop,1:cols)=child(2,1:cols);
             fitness(loop)=fitnessSecondChild;
             break;

@@ -5,4 +5,5 @@ function [shapley]=coalitionGame(train,trainLabel,population)
     PCC=modifiedPcc(train,population);
     shapley=MI.*PCC;
     shapley=(shapley-min(shapley))/(max(shapley)-min(shapley));
+    fprintf('\n\n Shapley values computed.....\n')
 end

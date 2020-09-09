@@ -1,8 +1,8 @@
-addpath('/Classifiers/')
-
 function [per]=classify(train,trainLabel,test,testLabel,agent,classifierType,paramValue)
     % function to generate classification accuracy based on the type of classifier selected
-
+    
+    cd Classifiers
+    
     switch classifierType
         case 'mlp'
             [per]=mlpClassifier(train,trainLabel,test,testLabel,agent,paramValue);
@@ -13,4 +13,7 @@ function [per]=classify(train,trainLabel,test,testLabel,agent,classifierType,par
         otherwise
             warning('classifier type not present!!!!');
     end
+    
+    cd ..
+    
 end

@@ -24,10 +24,10 @@ function[] = main(datasetName,numAgents,numIteration,numRuns,classifierType,para
     testLabel = data.testLabel;
 
     % initial dimension reduction
-    franks=importdata('franks.txt');
+    franks=franking(train, trainLabel);
     numFeatures=min(200, size(test,2));
-    train=train(:,franks(1:numfeat));    
-    test=test(:,franks(1:numfeat));    
+    train=train(:,franks(1:numFeatures));    
+    test=test(:,franks(1:numFeatures));    
     
     % initialize your variable here
     methodName='CGA';
@@ -44,9 +44,12 @@ function[] = main(datasetName,numAgents,numIteration,numRuns,classifierType,para
     end
     
     for runNo=1:numRuns
+        
+        fprintf('\n\n-------------- Run %d --------------\n\n', runNo);
         % run starts
         if ~exist(strcat('Results/', datasetName),'dir')
             mkdir(['Results/'],[datasetName])
+        end
         mkdir(['Results/' datasetName '/'],['Run_' int2str(runNo)]);               
         
         % memory initialization
@@ -61,6 +64,8 @@ function[] = main(datasetName,numAgents,numIteration,numRuns,classifierType,para
         
         tic
         for iterNo=1:numIteration
+            
+            fprintf('\n\n-------------- Iteration %d --------------\n\n', iterNo);
             % iteration starts
             mkdir(['Results/' datasetName '/Run_' int2str(runNo)],['Iteration_' int2str(iterNo)]);    
             
@@ -69,6 +74,7 @@ function[] = main(datasetName,numAgents,numIteration,numRuns,classifierType,para
 
             limit = randi(mcross-2,1)+2;
 
+            fprintf('\n\n=========== Crossover starts ===========\n\n')
             % crossover and mutation begins
             for loop1=1:limit  
                 
@@ -89,14 +95,17 @@ function[] = main(datasetName,numAgents,numIteration,numRuns,classifierType,para
                 [population,fitness]=crossover(population,firstParentId,secondParentId,probCross,shapley,fitness,classifierType,paramValue,fold);
                 fprintf('\n');
             end
+            fprintf('\n\n=========== Crossover ends ===========\n\n')
             
             % update memory after crossover-mutation
             memory=updateMemory(memory,population,fitness,accuracy);   
             displayMemory(memory);            
             saveFileName = strcat('Results/',datasetName,'/Run_',int2str(runNo),'/Iteration_',int2str(iterNo),'/',datasetName,'_result_',methodName,'_pop_',int2str(numAgents),'_iter_',int2str(numIteration),'_',classifierType,'_',int2str(paramValue),'.mat');
             save(saveFileName,'memory'); 
+            fprintf('\n\ndata saved.........\n')
             
             % coalition or cooperative game begins
+            fprintf('\n\n=========== Entering coalition game ===========\n\n')
             [shapley]=coalitionGame(train,trainLabel,population);   
         end
 
@@ -110,6 +119,7 @@ function[] = main(datasetName,numAgents,numIteration,numRuns,classifierType,para
         mkdir(['Results/' datasetName '/Run_' int2str(runNo)],'Final');
         saveFileName = strcat('Results/',datasetName,'/Run_',int2str(runNo),'/Final/',datasetName,'_result_',methodName,'_pop_',int2str(numAgents),'_iter_',int2str(numIteration),'_',classifierType,'_',int2str(paramValue),'.mat');
         save(saveFileName,'memory','time');
+        fprintf('\n\ndata saved.........\n')
     end
 end
 
@@ -136,7 +146,8 @@ end
 
 function []=displayMemory(memory)
     % function for displaying the memory
-
+    
+    fprintf('\n\n=========== Current Memory ===========\n\n')
     numAgents=size(memory.accuracy,2);    
     fprintf('\nIntermediate Memory - \n');
     for loop=1:numAgents/2
