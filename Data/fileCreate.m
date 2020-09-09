@@ -1,8 +1,8 @@
 function[] = fileCreate(fileName,trainPercentage)
     
-    filePath=strcat('Files/',fileName,'.xlsx');
+    filePath=strcat(fileName,'.xlsx');
     content=importdata(filePath);
-    mkdir(['Train-Test Division'],fileName);
+    trainPercentage = trainPercentage/100;
     
     class=content.textdata;
     inputData=content.data;
@@ -28,7 +28,6 @@ function[] = fileCreate(fileName,trainPercentage)
     testNo=1;
     
     
-%     fprintf('rows-%d cols-%d\n',size(inputData,1),size(inputData,2));
     for classNo=1:numClass                
         numTrainClass=int16(trainPercentage*classCount(classNo,1));
         numTestClass=classCount(classNo,1)-numTrainClass;                
@@ -41,6 +40,6 @@ function[] = fileCreate(fileName,trainPercentage)
         trainNo=trainNo+numTrainClass;
         testNo=testNo+numTestClass;        
     end
-%     save(strcat('Train-Test Division/',fileName,'/',fileName,'_data.mat'),'data');
-    save(strcat('Train-Test Division/',fileName,'/',fileName,'_data.mat'),'data');
+
+    save(strcat(fileName,'_data.mat'),'data');
 end
