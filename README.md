@@ -31,10 +31,10 @@ Recognition of human actions from visual contents is a budding field of computer
 ## Dataset samples
 
 <center>
-  <p>
+  
     <img src="https://github.com/Ritam-Guha/CGA/blob/master/Images/HMDB%20samples.png">
     <figcaption align="center">HMDB samples</figcaption>
-  </p>
+  
 
   *KTH samples*
   ![KTH samples](https://github.com/Ritam-Guha/CGA/blob/master/Images/KTH%20samples.png)
