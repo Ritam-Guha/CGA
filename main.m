@@ -15,7 +15,7 @@ function[] = main(datasetName,numAgents,numIteration,numRuns,classifierType,para
     global train trainLabel test testLabel fold MI
 
     % import the dataset
-    data=importdata(strcat('Data/', datasetName, '.mat'));
+    data=importdata(strcat('Data/', datasetName, '_data.mat'));
 
     % extract train and test data along with their labels
     train = data.train;
