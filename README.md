@@ -30,7 +30,7 @@ Recognition of human actions from visual contents is a budding field of computer
 
 ## Dataset samples
 
-<center>HMDB samples</center>
+<div style="text-align:center"><span style="color:red; font-family:Georgia; font-size:2em;">HMDB samples</span></div>
 <p align="center">  
   <img src="https://github.com/Ritam-Guha/CGA/blob/master/Images/HMDB%20samples.png"><br>
 </p>
