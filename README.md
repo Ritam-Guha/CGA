@@ -12,7 +12,7 @@ To Run the code, you need to specify the following parameters for the main funct
 * classifierType : name of the classifier you want to use (currently there are 3 alternatives - 'mlp'/'knn'/'svm')
 * paramValue : parameter value for the selected classifier (number of hidden layers for 'mlp', number of neighbors for 'knn', kernel function for 'svm')
 
-**Apart from these main paramters, there are several other customizations available. Check the main file (section heading 'initialize your variables here') for more information***
+***Apart from these main paramters, there are several other customizations available. Check the main file (section heading 'initialize your variables here') for more information***
 
 
 
