@@ -1,6 +1,6 @@
 # MATLAB code for CGA: Cooperative Genetic Algorithm
 
-### Paper Reference - Guha, R., Khan, A.H., Singh, P.K. et al. CGA: a new feature selection model for visual human action recognition. Neural Comput & Applic (2020). https://doi.org/10.1007/s00521-020-05297-5.
+### Paper Reference - Guha, R., Khan, A.H., Singh, P.K. et al. CGA: a new feature selection model for visual human action recognition. Neural Comput & Applic (2020). https://link.springer.com/article/10.1007/s00521-020-05297-5.
 
 ## Parameters
 
