@@ -27,7 +27,7 @@ Format the datasets using the following steps:
 1. Keep the features and labels in a single .xlsx file.
 2. Run 'fileCreate.m' present in the Data directory.
 
-fileCreate creates the necessary train-test divisioned .mat file.
+***Note: fileCreate creates the necessary train-test divisioned .mat file.***
 
 ## Parameters
 
