@@ -4,7 +4,7 @@
 
 ## Preparation of datasets
 
-Formatting of datasets is done using the following steps:
+Format the datasets using the following steps:
 
 * Video datasets
 1. Capture proper frames from the videos.
@@ -12,6 +12,7 @@ Formatting of datasets is done using the following steps:
 3. Label each frame according to the human activity being performed.
 4. Keep the features and labels in a single .xlsx file.
 5. Run 'fileCreate.m' as *fileCreate(xlsx file name, training percentage)* [for KTH: *fileCreate('KTH', 70)*]
+
 
 * Sensor datastes
 1. Keep the features and labels in a single .xlsx file.
