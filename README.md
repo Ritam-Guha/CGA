@@ -2,6 +2,18 @@
 
 ### Paper Reference - Guha, R., Khan, A.H., Singh, P.K. et al. CGA: a new feature selection model for visual human action recognition. Neural Comput & Applic (2020). https://link.springer.com/article/10.1007/s00521-020-05297-5.
 
+## Preparation of datasets
+
+Formatting of datasets is done using the following steps:
+
+* Video datasets
+1. Capture proper frames from the videos.
+2. Extract appropriate features from the frames.
+3. Label each frame according to the human activity being performed.
+4. Keep the features and labels in a single csv file.
+5. 
+    
+
 ## Parameters
 
 To Run the code, you need to specify the following parameters for the main function:
